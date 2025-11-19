@@ -13,17 +13,17 @@ def main():
     login_page.open_page("https://parabank.parasoft.com/parabank/index.htm")
     assert "ParaBank" in driver.title
 
-    log_in(login_page=login_page)
+    log_in("username", "password")
 
     time.sleep(5)
     driver.close()
 
-def log_in(login_page):
+def log_in(username, password):
     username_input = login_page.get_element(name="username")
-    username_input.send_keys("username")
+    username_input.send_keys(username)
 
     password_input = login_page.get_element(name="password")
-    password_input.send_keys("password")
+    password_input.send_keys(password)
 
     login_button = login_page.get_element(text="Log In")
     login_page.click(login_button)

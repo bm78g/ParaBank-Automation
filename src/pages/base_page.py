@@ -1,4 +1,4 @@
-# Contains base functionalities for accessing pages and its elements.
+# Base functionalities for accessing pages and its elements.
 
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
