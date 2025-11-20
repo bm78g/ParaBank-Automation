@@ -8,9 +8,6 @@ class Page:
     def __init__(self, driver):
         self.driver = driver
         self.wait = WebDriverWait(driver, 10)
-    
-    def click(self, element):
-        self.wait.until(EC.element_to_be_clickable(element)).click()
         
     def get_element(self, *, id=None, class_name=None, name=None, xpath=None, text=None):
         locator = None
