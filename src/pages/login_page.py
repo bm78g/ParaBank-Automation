@@ -1,3 +1,5 @@
+# POM for the login page. The login function takes in the username and password as strings.
+
 from ..pages.base_page import Page
 
 class LoginPage(Page):

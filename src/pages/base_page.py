@@ -1,4 +1,4 @@
-# Base functionalities for accessing pages and its elements.
+# Superclass of other page objects with basic functionalities for accessing the page and its elements.
 
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
